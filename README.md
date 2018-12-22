@@ -1,6 +1,6 @@
-![The almighty card](https://raw.githubusercontent.com/eranshmil/card/master/assets/screenshot.jpg)
+![The almighty card](/assets/screenshot.png)
 
-The idea and original [source code](https://github.com/bnb/bitandbang/) created by Tierney Cyren ([@bitandbang](https://github.com/bnb)).
+The idea and original [source code](https://github.com/bnb/bitandbang/) created by Tierney Cyren ([@bitandbang](https://github.com/bnb)). The [version with the ascii picture](https://github.com/eranshmil/card) if from [Eran Shmil](https://github.com/eranshmil).
 
 # Usage
 
@@ -17,10 +17,8 @@ npm run gen
 Via npx:
 
 ```bash
-npx @eranshmil/card
+npx fharper
 
 // render the avatar as colorized characters
-npx @eranshmil/card --fg
+npx fharper --fg
 ```
-
-Not including how to use it globally because I'm not sure why you'd want this as a global command. That'd be creepy.

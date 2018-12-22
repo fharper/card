@@ -21,18 +21,16 @@ const boxenOptions = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.green.bold('   Eran Shmil'),
-  work: chalk.white.italic.bold('Full-Stack Developer'),
-  email: chalk.cyan('eranshmil@gmail.com'),
-  twitter: chalk.cyan('https://twitter.com/eranshmil'),
-  github: chalk.cyan('https://github.com/eranshmil'),
-  linkedin: chalk.cyan('https://linkedin.com/in/eranshmil'),
-  npx: chalk.white('npx @eranshmil/card'),
+  name: chalk.green.bold('   Frédéric Harper'),
+  work: chalk.white.italic.bold('Senior Developer Advocate @ npm'),
+  email: chalk.cyan('fharper@npmjs.com'),
+  twitter: chalk.cyan('https://twitter.com/fharper'),
+  github: chalk.cyan('https://github.com/fharper'),
+  linkedin: chalk.cyan('https://linkedin.com/in/fredericharper'),
   labelEmail: chalk.white.bold('   Email:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('   GitHub:'),
   labelLinkedIn: chalk.white.bold('   LinkedIn:'),
-  labelCard: chalk.white.bold('   Card:')
 };
 
 // Actual strings we're going to output
@@ -42,7 +40,6 @@ const emailing = `${data.labelEmail}     ${data.email}`;
 const twittering = `${data.labelTwitter}   ${data.twitter}`;
 const githubing = `${data.labelGitHub}    ${data.github}`;
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
-const carding = `${data.labelCard}      ${data.npx}`;
 
 // Convert image to ascii and then print the card
 const output = fs.readFileSync(avatarFilePath, 'utf8').split(/\n/);
@@ -53,6 +50,5 @@ output[7] += emailing;
 output[9] += twittering;
 output[11] += githubing;
 output[13] += linkedining;
-output[18] += carding;
 
 console.log(chalk.green(boxen(output.join('\n'), boxenOptions)));

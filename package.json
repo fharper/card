@@ -1,20 +1,20 @@
 {
-  "name": "@eranshmil/card",
-  "version": "1.1.0",
-  "description": "A personal card for Eran Shmil (@eranshmil)",
+  "name": "fharper",
+  "version": "1.0.0",
+  "description": "Frédéric Harper business card",
   "bin": {
     "card": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eranshmil/card.git"
+    "url": "https://github.com/fharper/mybusinesscard.git"
   },
   "scripts": {
     "gen": "node ./bin/gen.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Eran Shmil <eranshmil@gmail.com>",
+  "author": "Frédéric Harper <fharper@oocz.net>",
   "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",

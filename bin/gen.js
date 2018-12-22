@@ -8,12 +8,12 @@ const imageToAsciiOptions = {
   }
 };
 
-imageToAscii('./assets/avatar.png', imageToAsciiOptions, (err, avatar) => {
+imageToAscii('./assets/avatar.jpg', imageToAsciiOptions, (err, avatar) => {
   fs.writeFileSync('./assets/avatar-fg.txt', avatar);
 });
 
 imageToAscii(
-  './assets/avatar.png',
+  './assets/avatar.jpg',
   {
     ...imageToAsciiOptions,
     bg: true,
